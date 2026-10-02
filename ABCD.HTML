@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Count Form Elements</title>
+</head>
+<body>
+<h2>Student Registration Form</h2>
+<form id ="myForm>">
+
+name:
+<input type="text">
+<br><br>
+Email:
+<input type="text">
+<br><br>
+Gender:
+<input type="radio"name="gender">Male
+<input type="radio"name="gender">Female
+<br><br>
+Hobbies:
+<input type="checkbox">Reading
+<input type="checkbox">Sports
+<br><br>
+Course:
+<select>
+<option>BCA</option>
+<option>B.Sc</option>
+<option>B.COM</option>
+</select>
+<br><br>
+<input type="button" value="Count Elements" onclick="CountElements()">
+<input type="reset" value="Reset">
+</form>
+</body>
+<script>
+function countElements()
+{
+var form = document.getElementById("myForm");
+var count = form.elements.length;
+alert("Number of form elements="+count);
+}
+</script>
+</html>
